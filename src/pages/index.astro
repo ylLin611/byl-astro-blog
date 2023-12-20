@@ -1,0 +1,42 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>🧑 Welcome!</h1>
+      <p></p>
+      <p>
+        你好，我是杨林。一个工作了5年的前端。像大多数人一样，干久了就想什么都搞搞，刚好逛论坛刷到
+
+
+        <code>Astro</code> , 就用它的 Blog Template 搭建了这个人网站。
+      </p>
+      <p>
+        后面我会在这分享一些技术内容及生活笔记，欢迎大家一起交流，代码会开源在github：
+
+
+        <a href="https://github.com/ylLin611/byl-astro-blog">byl-astro-blog</a>
+      </p>
+
+      <p>在做及想做的一些工作：</p>
+      <ul>
+        <li>使用 Nuxt3 搭建一套管理系统 Template</li>
+        <li>Uniapp 组件库尝试</li>
+        <li>写文档，输出 Blog</li>
+        <li>学英语 Forever...</li>
+      </ul>
+      <p>希望大家每天开心，永远活着！</p>
+    </main>
+    <Footer />
+  </body>
+</html>
